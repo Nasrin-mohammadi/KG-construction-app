@@ -12,4 +12,4 @@ To install and run the app locally, follow these steps:
 
 1. Clone this repository to your local machine.
 2. Install the required dependencies using the provided `requirements.txt` file.
-3. streamlit run app.py 
+3. Run the app using: streamlit run app.py 
