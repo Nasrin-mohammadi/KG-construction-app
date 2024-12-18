@@ -5,3 +5,4 @@ streamlit==1.33.0
 chromadb
 unstructured
 pillow
+poppler
