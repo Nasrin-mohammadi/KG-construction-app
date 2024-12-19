@@ -1,8 +1,8 @@
-langchain==0.1.16
-langchain_openai==0.1.3
-Openai==1.3.6
-streamlit==1.33.0
+unstructured[local-inference]
+langchain
+langchain_openai
+Openai
+streamlit
 chromadb
-unstructured
 pillow
-poppler
+langchain_community
