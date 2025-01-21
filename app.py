@@ -10,8 +10,8 @@ if api_key:
 else:
     st.stop()
 
-from langchain_community.document_loaders import UnstructuredPDFLoader
-#from langchain.document_loaders import UnstructuredPDFLoader
+#from langchain_community.document_loaders import UnstructuredPDFLoader
+from langchain.document_loaders import UnstructuredPDFLoader
 from langchain_openai import ChatOpenAI
 from langchain.prompts.prompt import PromptTemplate
 from langchain.prompts import PromptTemplate
