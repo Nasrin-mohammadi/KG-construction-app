@@ -1,0 +1,166 @@
+{
+  "@context": {
+    "@vocab": "http://emmo.info/emmo#",
+    "ex": "http://example.com/",
+    "is_manufacturing_input": "emmo:EMMO_e1097637",
+    "has_manufacturing_output": "emmo:EMMO_e1245987",
+    "is_measurement_input": "emmo:EMMO_m5677989",
+    "has_measurement_output": "emmo:EMMO_m87987545",
+    "has_property": "emmo:EMMO_p5778r78",
+    "has_parameter": "emmo:EMMO_p46903ar7",
+    "Material": "emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94",
+    "Manufacturing": "emmo:EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b",
+    "Measurement": "emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb",
+    "Property": "emmo:EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba",
+    "Parameter": "emmo:EMMO_d1d436e7_72fc_49cd_863b_7bfb4ba5276a"
+  },
+  "@graph": [
+    {
+      "@id": "ex:PlatinumNanocubes",
+      "@type": "Material",
+      "has_property": [
+        {"@id": "ex:HydrogenDesorptionPeak"},
+        {"@id": "ex:OxidationPeak"},
+        {"@id": "ex:PeakMassif"},
+        {"@id": "ex:AnionAdsorptionPeak"},
+        {"@id": "ex:SurfaceDomainPercentage111Cubes"},
+        {"@id": "ex:SurfaceDomainPercentage100Cubes"},
+        {"@id": "ex:TotalOrientedSurfaceDomains"},
+        {"@id": "ex:AverageSizeCubicNanoparticles"}
+      ],
+      "is_manufacturing_input": {"@id": "ex:SynthesisPlatinumNanocubes"},
+      "is_measurement_input": [
+        {"@id": "ex:VoltammetricProfilesMeasurement"},
+        {"@id": "ex:TEM"}
+      ]
+    },
+    {
+      "@id": "ex:PlatinumNanotetrahedronsOctahedrons",
+      "@type": "Material",
+      "has_property": [
+        {"@id": "ex:HydrogenDesorptionPeak"},
+        {"@id": "ex:OxidationPeak"},
+        {"@id": "ex:PeakMassif"},
+        {"@id": "ex:AnionAdsorptionPeak"},
+        {"@id": "ex:SurfaceDomainPercentage111TetrahedronsOctahedrons"},
+        {"@id": "ex:SurfaceDomainPercentage100TetrahedronsOctahedrons"},
+        {"@id": "ex:TotalOrientedSurfaceDomains"},
+        {"@id": "ex:AverageSizeTetrahedronsOctahedrons"}
+      ],
+      "is_manufacturing_input": {"@id": "ex:SynthesisPlatinumNanotetrahedronsOctahedrons"},
+      "is_measurement_input": [
+        {"@id": "ex:VoltammetricProfilesMeasurement"},
+        {"@id": "ex:TEM"}
+      ]
+    },
+    {
+      "@id": "ex:TTAB",
+      "@type": "Material",
+      "is_manufacturing_input": [
+        {"@id": "ex:SynthesisPlatinumNanocubes"},
+        {"@id": "ex:SynthesisPlatinumNanotetrahedronsOctahedrons"}
+      ]
+    },
+    {
+      "@id": "ex:PA",
+      "@type": "Material",
+      "is_manufacturing_input": [
+        {"@id": "ex:SynthesisPlatinumNanocubes"},
+        {"@id": "ex:SynthesisPlatinumNanotetrahedronsOctahedrons"}
+      ]
+    },
+    {
+      "@id": "ex:SynthesisPlatinumNanocubes",
+      "@type": "Manufacturing",
+      "has_manufacturing_output": {"@id": "ex:PlatinumNanocubes"},
+      "has_parameter": [
+        {"@id": "ex:NucleationGrowthConditions"},
+        {"@id": "ex:HydrogenPressureReactor"}
+      ]
+    },
+    {
+      "@id": "ex:SynthesisPlatinumNanotetrahedronsOctahedrons",
+      "@type": "Manufacturing",
+      "has_manufacturing_output": {"@id": "ex:PlatinumNanotetrahedronsOctahedrons"},
+      "has_parameter": [
+        {"@id": "ex:NucleationGrowthConditions"},
+        {"@id": "ex:HydrogenPressureReactor"}
+      ]
+    },
+    {
+      "@id": "ex:VoltammetricProfilesMeasurement",
+      "@type": "Measurement",
+      "has_measurement_output": [
+        {"@id": "ex:HydrogenDesorptionPeak"},
+        {"@id": "ex:OxidationPeak"},
+        {"@id": "ex:PeakMassif"},
+        {"@id": "ex:AnionAdsorptionPeak"}
+      ]
+    },
+    {
+      "@id": "ex:TEM",
+      "@type": "Measurement",
+      "has_measurement_output": [
+        {"@id": "ex:SurfaceDomainPercentage111Cubes"},
+        {"@id": "ex:SurfaceDomainPercentage100Cubes"},
+        {"@id": "ex:SurfaceDomainPercentage111TetrahedronsOctahedrons"},
+        {"@id": "ex:SurfaceDomainPercentage100TetrahedronsOctahedrons"},
+        {"@id": "ex:TotalOrientedSurfaceDomains"},
+        {"@id": "ex:AverageSizeCubicNanoparticles"},
+        {"@id": "ex:AverageSizeTetrahedronsOctahedrons"}
+      ]
+    },
+    {
+      "@id": "ex:HydrogenDesorptionPeak",
+      "@type": "Property"
+    },
+    {
+      "@id": "ex:OxidationPeak",
+      "@type": "Property"
+    },
+    {
+      "@id": "ex:PeakMassif",
+      "@type": "Property"
+    },
+    {
+      "@id": "ex:AnionAdsorptionPeak",
+      "@type": "Property"
+    },
+    {
+      "@id": "ex:SurfaceDomainPercentage111Cubes",
+      "@type": "Property"
+    },
+    {
+      "@id": "ex:SurfaceDomainPercentage100Cubes",
+      "@type": "Property"
+    },
+    {
+      "@id": "ex:SurfaceDomainPercentage111TetrahedronsOctahedrons",
+      "@type": "Property"
+    },
+    {
+      "@id": "ex:SurfaceDomainPercentage100TetrahedronsOctahedrons",
+      "@type": "Property"
+    },
+    {
+      "@id": "ex:TotalOrientedSurfaceDomains",
+      "@type": "Property"
+    },
+    {
+      "@id": "ex:AverageSizeCubicNanoparticles",
+      "@type": "Property"
+    },
+    {
+      "@id": "ex:AverageSizeTetrahedronsOctahedrons",
+      "@type": "Property"
+    },
+    {
+      "@id": "ex:NucleationGrowthConditions",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:HydrogenPressureReactor",
+      "@type": "Parameter"
+    }
+  ]
+}
