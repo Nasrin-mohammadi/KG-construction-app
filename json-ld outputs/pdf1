@@ -1,0 +1,151 @@
+{
+  "@context": {
+    "@vocab": "http://emmo.info/emmo#",
+    "ex": "http://example.com/",
+    "is_manufacturing_input": "emmo:EMMO_e1097637",
+    "has_manufacturing_output": "emmo:EMMO_e1245987",
+    "is_measurement_input": "emmo:EMMO_m5677989",
+    "has_measurement_output": "emmo:EMMO_m87987545",
+    "has_property": "emmo:EMMO_p5778r78",
+    "has_parameter": "emmo:EMMO_p46903ar7"
+  },
+  "@graph": [
+    {
+      "@id": "ex:Pd",
+      "@type": "Material"
+    },
+    {
+      "@id": "ex:Pt",
+      "@type": "Material"
+    },
+    {
+      "@id": "ex:Oxygen",
+      "@type": "Material"
+    },
+    {
+      "@id": "ex:Argon",
+      "@type": "Material"
+    },
+    {
+      "@id": "ex:Bromine",
+      "@type": "Material"
+    },
+    {
+      "@id": "ex:ElectrochemicalDeposition",
+      "@type": "Manufacturing",
+      "is_manufacturing_input": [
+        {"@id": "ex:Pd"},
+        {"@id": "ex:Pt"}
+      ],
+      "has_manufacturing_output": [
+        {"@id": "ex:UltrathinPdFilmsOnPt111"}
+      ],
+      "has_parameter": [
+        {"@id": "ex:AppliedPotential"},
+        {"@id": "ex:ScanRate"},
+        {"@id": "ex:SolutionPH"},
+        {"@id": "ex:ElectrolyteComposition"}
+      ]
+    },
+    {
+      "@id": "ex:UltrahighVacuumElectrochemistryExperiments",
+      "@type": "Manufacturing",
+      "has_parameter": [
+        {"@id": "ex:Pressure"},
+        {"@id": "ex:BakeOutTemperature"}
+      ]
+    },
+    {
+      "@id": "ex:PotentiostaticDeposition",
+      "@type": "Manufacturing"
+    },
+    {
+      "@id": "ex:CyclicVoltammetry",
+      "@type": "Measurement",
+      "is_measurement_input": [
+        {"@id": "ex:Pd"},
+        {"@id": "ex:Pt"},
+        {"@id": "ex:Oxygen"},
+        {"@id": "ex:Bromine"}
+      ],
+      "has_measurement_output": [
+        {"@id": "ex:ElectrodeArea"}
+      ]
+    },
+    {
+      "@id": "ex:Coulometry",
+      "@type": "Measurement",
+      "is_measurement_input": [
+        {"@id": "ex:Pd"},
+        {"@id": "ex:Pt"}
+      ],
+      "has_measurement_output": [
+        {"@id": "ex:ElectrodeArea"}
+      ]
+    },
+    {
+      "@id": "ex:AugerElectronSpectroscopy",
+      "@type": "Measurement",
+      "is_measurement_input": [
+        {"@id": "ex:Pd"},
+        {"@id": "ex:Pt"},
+        {"@id": "ex:Argon"},
+        {"@id": "ex:Bromine"}
+      ]
+    },
+    {
+      "@id": "ex:LowEnergyElectronDiffraction",
+      "@type": "Measurement",
+      "is_measurement_input": [
+        {"@id": "ex:Pd"},
+        {"@id": "ex:Pt"},
+        {"@id": "ex:Bromine"}
+      ]
+    },
+    {
+      "@id": "ex:TemperatureProgrammedDesorptionMassSpectrometry",
+      "@type": "Measurement",
+      "is_measurement_input": [
+        {"@id": "ex:Pd"},
+        {"@id": "ex:Pt"},
+        {"@id": "ex:Oxygen"}
+      ]
+    },
+    {
+      "@id": "ex:ElectrodeArea",
+      "@type": "Property",
+      "has_property": [
+        {"@id": "ex:Pd"},
+        {"@id": "ex:Pt"}
+      ]
+    },
+    {
+      "@id": "ex:AppliedPotential",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:ScanRate",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:SolutionPH",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:ElectrolyteComposition",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:Pressure",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:BakeOutTemperature",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:UltrathinPdFilmsOnPt111",
+      "@type": "Material"
+    }
+  ]
+}
