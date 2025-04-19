@@ -1,0 +1,78 @@
+
+"Material": [
+    {"Platinum nanocubes": {"ID": "Material_001"}},
+    {"Platinum nanotetrahedrons/octahedrons": {"ID": "Material_002"}},
+    {"Tetraalkylammonium bromides (TTAB)": {"ID": "Material_003"}},
+    {"Phosphoric acid (PA)": {"ID": "Material_004"}}
+]
+
+"Manufacturing": [
+    {"Synthesis of platinum nanoparticles via TTAB": {"ID": "Manufacturing_001"}},
+    {"Synthesis of platinum nanoparticles via PA": {"ID": "Manufacturing_002"}}
+]
+
+"Measurement": [
+    {"Transmission electron microscopy (TEM)": {"ID": "Measurement_001"}},
+    {"Cyclic voltammetry": {"ID": "Measurement_002"}}
+]
+
+"Property": [
+    {"Average size of cubic nanoparticles": {"Value": "13 nm", "ID": "Property_001"}},
+    {"Average size of tetrahedrons/octahedrons": {"Value": "10 nm", "ID": "Property_002"}},
+    {"Hydrogen desorption peak voltage": {"Value": "0.11 V", "ID": "Property_003"}},
+    {"Oxidation peak voltage": {"Value": "0.25 V", "ID": "Property_004"}},
+    {"Peak massif voltage range": {"Value": "0.3-0.4 V", "ID": "Property_005"}},
+    {"Anion adsorption peak voltage": {"Value": "0.48 V", "ID": "Property_006"}},
+    {"Percentage of (111)-oriented surface domains for cubic nanoparticles": {"Value": "18%", "ID": "Property_007"}},
+    {"Percentage of (100) surface domains for cubic nanoparticles": {"Value": "42%", "ID": "Property_008"}},
+    {"Percentage of (111) surface domains for tetrahedron/octahedron nanoparticles": {"Value": "44%", "ID": "Property_009"}},
+    {"Percentage of (100) terraces for tetrahedron/octahedron nanoparticles": {"Value": "14%", "ID": "Property_010"}},
+    {"Total oriented surface domains for both samples": {"Value": "60%", "ID": "Property_011"}}
+]
+
+"Parameter": [
+    {"Hydrogen pressure in reactor": {"ID": "Parameter_001"}} # No numeric value provided, so it's mentioned without value.
+]
+Relationships:
+"is_manufacturing_input": [
+    ("Platinum nanocubes", "is_manufacturing_input", "Synthesis of platinum nanoparticles via TTAB"),
+    ("Platinum nanotetrahedrons/octahedrons", "is_manufacturing_input", "Synthesis of platinum nanoparticles via PA"),
+    ("Tetraalkylammonium bromides (TTAB)", "is_manufacturing_input", "Synthesis of platinum nanoparticles via TTAB"),
+    ("Phosphoric acid (PA)", "is_manufacturing_input", "Synthesis of platinum nanoparticles via PA")
+]
+
+"has_manufacturing_output": [
+    ("Synthesis of platinum nanoparticles via TTAB", "has_manufacturing_output", "Platinum nanocubes"),
+    ("Synthesis of platinum nanoparticles via PA", "has_manufacturing_output", "Platinum nanotetrahedrons/octahedrons")
+]
+"is_measurement_input": [
+    ("Platinum nanocubes", "is_measurement_input", "Transmission electron microscopy (TEM)"),
+    ("Platinum nanotetrahedrons/octahedrons", "is_measurement_input", "Transmission electron microscopy (TEM)"),
+    ("Platinum nanocubes", "is_measurement_input", "Cyclic voltammetry"),
+    ("Platinum nanotetrahedrons/octahedrons", "is_measurement_input", "Cyclic voltammetry")
+]
+
+"has_measurement_output": [
+    ("Transmission electron microscopy (TEM)", "has_measurement_output", "Average size of cubic nanoparticles"),
+    ("Transmission electron microscopy (TEM)", "has_measurement_output", "Average size of tetrahedrons/octahedrons"),
+    ("Cyclic voltammetry", "has_measurement_output", "Hydrogen desorption peak voltage"),
+    ("Cyclic voltammetry", "has_measurement_output", "Oxidation peak voltage"),
+    ("Cyclic voltammetry", "has_measurement_output", "Peak massif voltage range"),
+    ("Cyclic voltammetry", "has_measurement_output", "Anion adsorption peak voltage"),
+    ("Cyclic voltammetry", "has_measurement_output", "Percentage of (111)-oriented surface domains for cubic nanoparticles"),
+    ("Cyclic voltammetry", "has_measurement_output", "Percentage of (100) surface domains for cubic nanoparticles"),
+    ("Cyclic voltammetry", "has_measurement_output", "Percentage of (111) surface domains for tetrahedron/octahedron nanoparticles"),
+    ("Cyclic voltammetry", "has_measurement_output", "Percentage of (100) terraces for tetrahedron/octahedron nanoparticles"),
+    ("Cyclic voltammetry", "has_measurement_output", "Total oriented surface domains for both samples")
+]
+"has_property": [
+    ("Platinum nanocubes", "has_property", "Average size of cubic nanoparticles"),
+    ("Platinum nanocubes", "has_property", "Percentage of (111)-oriented surface domains for cubic nanoparticles"),
+    ("Platinum nanocubes", "has_property", "Percentage of (100) surface domains for cubic nanoparticles"),
+    ("Platinum nanotetrahedrons/octahedrons", "has_property", "Average size of tetrahedrons/octahedrons"),
+    ("Platinum nanotetrahedrons/octahedrons", "has_property", "Percentage of (111) surface domains for tetrahedron/octahedron nanoparticles"),
+    ("Platinum nanotetrahedrons/octahedrons", "has_property", "Percentage of (100) terraces for tetrahedron/octahedron nanoparticles")
+]
+"has_parameter": [
+    ("Synthesis of platinum nanoparticles via PA", "has_parameter", "Hydrogen pressure in reactor")
+]
