@@ -1,0 +1,102 @@
+"Material": [
+    "Pd (Palladium)",
+    "Pt (Platinum)",
+    "PdSO4 (Palladium(II) sulfate)",
+    "H2SO4 (Sulfuric acid)",
+    "NaI (Sodium iodide)",
+    "NaBr (Sodium bromide)",
+    "NaCl (Sodium chloride)",
+    "NaF (Sodium fluoride)",
+    "Cu(ClO4)2 (Copper(II) perchlorate)",
+    "CF3COOH (Trifluoroacetic acid)",
+    "N2 (Nitrogen gas)",
+    "Ar (Argon gas)",
+    "O2 (Oxygen gas)"
+]
+
+"Manufacturing": [
+    "Electrochemical deposition",
+    "Vapor deposition",
+    "Sputtering",
+    "Annealing under UHV (Ultra High Vacuum) conditions"
+]
+
+"Measurement": [
+    "Cyclic voltammetry",
+    "Coulometry",
+    "Auger electron spectroscopy",
+    "Low-energy electron diffraction",
+    "Hydrogen underpotential deposition–desorption charge"
+]
+
+"Property": [
+    "Electrode area of Pt (111) - 1.12 cm2",
+    "Geometric area of Pt (111) - 1.1192 cm2",
+    "Geometrical surface area of Pd (111) - 1.9796 cm2"
+]
+
+"Parameter": [
+    "Applied potential",
+    "Scan rate - 2 mV/s",
+    "Solution pH",
+    "Electrolyte composition",
+    "Ar+ current for bombardment - 4–10 μA",
+    "Thermal oxidation temperature - 550 °C",
+    "Annealing temperature - 750–800 °C",
+    "PO2 during thermal oxidation - 5×10–6 torr"
+]
+Relationships:
+"is_manufacturing_input": [
+    ("Pd (Palladium)", "Electrochemical deposition"),
+    ("Pt (Platinum)", "Electrochemical deposition"),
+    ("Pd (Palladium)", "Vapor deposition"),
+    ("Pt (Platinum)", "Vapor deposition"),
+    ("Pd (Palladium)", "Sputtering"),
+    ("Pt (Platinum)", "Sputtering"),
+    ("Pd (Palladium)", "Annealing under UHV (Ultra High Vacuum) conditions"),
+    ("Pt (Platinum)", "Annealing under UHV (Ultra High Vacuum) conditions")
+]
+
+"has_manufacturing_output": [
+    ("Electrochemical deposition", "PdSO4 (Palladium(II) sulfate)"),
+    ("Vapor deposition", "Thin metal films"),
+    ("Sputtering", "Thin metal films"),
+    ("Annealing under UHV (Ultra High Vacuum) conditions", "Annealed Pd (Palladium)"),
+    ("Annealing under UHV (Ultra High Vacuum) conditions", "Annealed Pt (Platinum)")
+]
+"is_measurement_input": [
+    ("PdSO4 (Palladium(II) sulfate)", "Cyclic voltammetry"),
+    ("PdSO4 (Palladium(II) sulfate)", "Coulometry"),
+    ("Thin metal films", "Auger electron spectroscopy"),
+    ("Thin metal films", "Low-energy electron diffraction"),
+    ("Annealed Pd (Palladium)", "Hydrogen underpotential deposition–desorption charge"),
+    ("Annealed Pt (Platinum)", "Hydrogen underpotential deposition–desorption charge")
+]
+
+"has_measurement_output": [
+    ("Cyclic voltammetry", "Electrode area of Pt (111) - 1.12 cm2"),
+    ("Cyclic voltammetry", "Geometric area of Pt (111) - 1.1192 cm2"),
+    ("Cyclic voltammetry", "Geometrical surface area of Pd (111) - 1.9796 cm2"),
+    ("Coulometry", "Electrode area of Pt (111) - 1.12 cm2"),
+    ("Coulometry", "Geometric area of Pt (111) - 1.1192 cm2"),
+    ("Coulometry", "Geometrical surface area of Pd (111) - 1.9796 cm2"),
+    ("Auger electron spectroscopy", "Electrode area of Pt (111) - 1.12 cm2"),
+    ("Low-energy electron diffraction", "Geometric area of Pt (111) - 1.1192 cm2"),
+    ("Hydrogen underpotential deposition–desorption charge", "Geometrical surface area of Pd (111) - 1.9796 cm2")
+]
+"has_property": [
+    ("Pd (Palladium)", "Geometrical surface area of Pd (111) - 1.9796 cm2"),
+    ("Pt (Platinum)", "Electrode area of Pt (111) - 1.12 cm2"),
+    ("Pt (Platinum)", "Geometric area of Pt (111) - 1.1192 cm2")
+]
+"has_parameter": [
+    ("Electrochemical deposition", "Electrolyte composition"),
+    ("Electrochemical deposition", "Applied potential"),
+    ("Electrochemical deposition", "Scan rate - 2 mV/s"),
+    ("Electrochemical deposition", "Solution pH"),
+    ("Vapor deposition", "Applied potential"),
+    ("Sputtering", "Applied potential"),
+    ("Annealing under UHV (Ultra High Vacuum) conditions", "Ar+ current for bombardment - 4–10 μA"),
+    ("Annealing under UHV (Ultra High Vacuum) conditions", "Thermal oxidation temperature - 550 °C"),
+    ("Annealing under UHV (Ultra High Vacuum) conditions", "Annealing temperature - 750–800 °C"),
+    ("Annealing under UHV (Ultra High Vacuum) conditions", "PO2 during thermal oxidation - 5×10–6 torr")
