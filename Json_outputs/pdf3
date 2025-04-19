@@ -1,0 +1,91 @@
+"Material": [
+    "Carbonate anion-intercalated cobalt-based LDHs (Co–Al LDHs)",
+    "0.3 M NaOH",
+    "0.026 M Na2CO3",
+    "6 mM CoCl2·6H2O",
+    "3 mM AlCl3·6H2O",
+    "deionized water",
+    "anhydrous ethanol",
+    "NGB solution (0.5 mM)",
+    "glassy carbon electrode (GCE)",
+    "pure nitrogen"
+]
+
+"Manufacturing": [
+    "Synthesis of Carbonate Anion-intercalated Co–Al LDHs",
+    "Electrode Modification"
+]
+
+"Measurement": [
+    "Electrochemical measurements",
+    "X-ray powder diffraction (XRD)",
+    "Field-emission scanning electron microscopy (FESEM)"
+]
+
+"Property": [
+    {"pH": "10.86"},
+    {"Temperature for aging": "60 °C"},
+    {"Aging time": "2 h"},
+    {"Basal interlayer spacing": "0.76 nm"},
+    {"Lateral size of nanoflakes": "100–300 nm"},
+    {"Thickness of nanoflakes": "<10 nm"}
+]
+
+"Parameter": [
+    {"Stirring time": "20 min"},
+    {"Centrifugation wash count": "4 times"},
+    {"Electrode drying time": "25 min"},
+    {"XRD scan rate": "0.05° s−1"},
+    {"FESEM operating voltage": "5.0 kV"},
+    {"Concentration of NaOH": "0.3 M"},
+    {"Concentration of Na2CO3": "0.026 M"},
+    {"Concentration of CoCl2·6H2O": "6 mM"},
+    {"Concentration of AlCl3·6H2O": "3 mM"},
+
+]
+Relationships:
+"is_manufacturing_input": [
+    ("Carbonate anion-intercalated cobalt-based LDHs (Co–Al LDHs)", "Synthesis of Carbonate Anion-intercalated Co–Al LDHs"),
+    ("0.3 M NaOH", "Synthesis of Carbonate Anion-intercalated Co–Al LDHs"),
+    ("0.026 M Na2CO3", "Synthesis of Carbonate Anion-intercalated Co–Al LDHs"),
+    ("6 mM CoCl2·6H2O", "Synthesis of Carbonate Anion-intercalated Co–Al LDHs"),
+    ("3 mM AlCl3·6H2O", "Synthesis of Carbonate Anion-intercalated Co–Al LDHs"),
+    ("deionized water", "Synthesis of Carbonate Anion-intercalated Co–Al LDHs"),
+    ("anhydrous ethanol", "Electrode Modification"),
+    ("NGB solution (0.5 mM)", "Electrode Modification"),
+    ("Carbonate anion-intercalated cobalt-based LDHs (Co–Al LDHs)", "Electrode Modification"),
+    ("glassy carbon electrode (GCE)", "Electrode Modification")
+]
+
+"has_manufacturing_output": [
+    ("Synthesis of Carbonate Anion-intercalated Co–Al LDHs", "Carbonate anion-intercalated cobalt-based LDHs (Co–Al LDHs)"),
+    ("Electrode Modification", "NGB/Co–Al-LDH/GCE electrode")
+]
+"is_measurement_input": [
+    ("Carbonate anion-intercalated cobalt-based LDHs (Co–Al LDHs)", "Electrochemical measurements"),
+    ("Carbonate anion-intercalated cobalt-based LDHs (Co–Al LDHs)", "X-ray powder diffraction (XRD)"),
+    ("Carbonate anion-intercalated cobalt-based LDHs (Co–Al LDHs)", "Field-emission scanning electron microscopy (FESEM)")
+]
+
+"has_measurement_output": [
+    ("Electrochemical measurements", "pH"),
+    ("X-ray powder diffraction (XRD)", "Basal interlayer spacing"),
+    ("Field-emission scanning electron microscopy (FESEM)", "Lateral size of nanoflakes"),
+    ("Field-emission scanning electron microscopy (FESEM)", "Thickness of nanoflakes")
+]
+"has_property": [
+    ("Carbonate anion-intercalated cobalt-based LDHs (Co–Al LDHs)", "pH"),
+    ("Carbonate anion-intercalated cobalt-based LDHs (Co–Al LDHs)", "Basal interlayer spacing"),
+    ("Carbonate anion-intercalated cobalt-based LDHs (Co–Al LDHs)", "Lateral size of nanoflakes"),
+    ("Carbonate anion-intercalated cobalt-based LDHs (Co–Al LDHs)", "Thickness of nanoflakes")
+]
+"has_parameter": [
+    ("X-ray powder diffraction (XRD)", "XRD scan rate"),
+    ("Field-emission scanning electron microscopy (FESEM)", "FESEM operating voltage")
+    ("Synthesis of Carbonate Anion-intercalated Co–Al LDHs", "Concentration of NaOH"),
+    ("Synthesis of Carbonate Anion-intercalated Co–Al LDHs", "Concentration of Na2CO3"),
+    ("Synthesis of Carbonate Anion-intercalated Co–Al LDHs", "Concentration of CoCl2·6H2O"),
+    ("Synthesis of Carbonate Anion-intercalated Co–Al LDHs", "Concentration of AlCl3·6H2O"),
+    ("Synthesis of Carbonate Anion-intercalated Co–Al LDHs", "Stirring time"),
+    ("Synthesis of Carbonate Anion-intercalated Co–Al LDHs", "Centrifugation wash count"),
+    ("Electrode Modification", "Electrode drying time")]
