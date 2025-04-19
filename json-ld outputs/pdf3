@@ -1,0 +1,283 @@
+{
+  "@context": {
+    "@vocab": "http://emmo.info/emmo#",
+    "ex": "http://example.com/",
+    "is_manufacturing_input": "emmo:EMMO_e1097637",
+    "has_manufacturing_output": "emmo:EMMO_e1245987",
+    "is_measurement_input": "emmo:EMMO_m5677989",
+    "has_measurement_output": "emmo:EMMO_m87987545",
+    "has_property": "emmo:EMMO_p5778r78",
+    "has_parameter": "emmo:EMMO_p46903ar7",
+    "Material": "emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94",
+    "Manufacturing": "emmo:EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b",
+    "Measurement": "emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb",
+    "Property": "emmo:EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba",
+    "Parameter": "emmo:EMMO_d1d436e7_72fc_49cd_863b_7bfb4ba5276a"
+  },
+  "@graph": [
+    {
+      "@id": "ex:NaOH",
+      "@type": "Material"
+    },
+    {
+      "@id": "ex:Na2CO3",
+      "@type": "Material"
+    },
+    {
+      "@id": "ex:CoCl26H2O",
+      "@type": "Material"
+    },
+    {
+      "@id": "ex:AlCl36H2O",
+      "@type": "Material"
+    },
+    {
+      "@id": "ex:CarbonateAnionInterCalatedCoAlLDHs",
+      "@type": "Material",
+      "has_property": [
+        {
+          "@id": "ex:pHValue1086",
+          "@type": "Property"
+        },
+        {
+          "@id": "ex:CrystalStructure",
+          "@type": "Property"
+        },
+        {
+          "@id": "ex:Morphology",
+          "@type": "Property"
+        }
+      ],
+      "is_measurement_input": [
+        {
+          "@id": "ex:ElectrochemicalMeasurements"
+        },
+        {
+          "@id": "ex:XRayPowderDiffractionXRD"
+        },
+        {
+          "@id": "ex:FieldEmissionScanningElectronMicroscopyFESEM"
+        }
+      ],
+      "is_manufacturing_input": [
+        {
+          "@id": "ex:SynthesisOfCarbonateAnionInterCalatedCoAlLDHs"
+        }
+      ]
+    },
+    {
+      "@id": "ex:DeionizedWater",
+      "@type": "Material",
+      "is_manufacturing_input": [
+        {
+          "@id": "ex:SynthesisOfCarbonateAnionInterCalatedCoAlLDHs"
+        }
+      ]
+    },
+    {
+      "@id": "ex:AnhydrousEthanol",
+      "@type": "Material",
+      "is_manufacturing_input": [
+        {
+          "@id": "ex:SynthesisOfCarbonateAnionInterCalatedCoAlLDHs"
+        }
+      ]
+    },
+    {
+      "@id": "ex:GlassyCarbonElectrodeGCE",
+      "@type": "Material",
+      "is_manufacturing_input": [
+        {
+          "@id": "ex:ElectrodeModification"
+        }
+      ]
+    },
+    {
+      "@id": "ex:NGBSolution",
+      "@type": "Material",
+      "is_manufacturing_input": [
+        {
+          "@id": "ex:ElectrodeModification"
+        }
+      ]
+    },
+    {
+      "@id": "ex:SynthesisOfCarbonateAnionInterCalatedCoAlLDHs",
+      "@type": "Manufacturing",
+      "has_manufacturing_output": [
+        {
+          "@id": "ex:CarbonateAnionInterCalatedCoAlLDHs"
+        }
+      ],
+      "has_parameter": [
+        {
+          "@id": "ex:StirringTimeValue20min"
+        },
+        {
+          "@id": "ex:AgingTemperatureValue60C"
+        },
+        {
+          "@id": "ex:AgingTimeValue2h"
+        },
+        {
+          "@id": "ex:Centrifugation"
+        },
+        {
+          "@id": "ex:Washing"
+        },
+        {
+          "@id": "ex:AirDrying"
+        }
+      ]
+    },
+    {
+      "@id": "ex:ElectrodeModification",
+      "@type": "Manufacturing",
+      "has_manufacturing_output": [
+        {
+          "@id": "ex:ModifiedGlassyCarbonElectrode"
+        }
+      ],
+      "has_parameter": [
+        {
+          "@id": "ex:LDHsDispersionConcentrationValue2mgml1"
+        },
+        {
+          "@id": "ex:LDHsStirringTimeValue12h"
+        },
+        {
+          "@id": "ex:ElectrodeDryingMethod"
+        },
+        {
+          "@id": "ex:NGBImmersionTimeValue25min"
+        }
+      ]
+    },
+    {
+      "@id": "ex:ElectrochemicalMeasurements",
+      "@type": "Measurement",
+      "has_measurement_output": [
+        {
+          "@id": "ex:pHValue1086"
+        }
+      ],
+      "has_parameter": [
+        {
+          "@id": "ex:ElectrochemicalWorkstationModel"
+        },
+        {
+          "@id": "ex:DeaerationMethod"
+        }
+      ]
+    },
+    {
+      "@id": "ex:XRayPowderDiffractionXRD",
+      "@type": "Measurement",
+      "has_measurement_output": [
+        {
+          "@id": "ex:CrystalStructure"
+        }
+      ],
+      "has_parameter": [
+        {
+          "@id": "ex:XRDScanRateValue005s1"
+        }
+      ]
+    },
+    {
+      "@id": "ex:FieldEmissionScanningElectronMicroscopyFESEM",
+      "@type": "Measurement",
+      "has_measurement_output": [
+        {
+          "@id": "ex:Morphology"
+        }
+      ],
+      "has_parameter": [
+        {
+          "@id": "ex:FESEMOperatingVoltageValue50kV"
+        }
+      ]
+    },
+    {
+      "@id": "ex:pHValue1086",
+      "@type": "Property"
+    },
+    {
+      "@id": "ex:CrystalStructure",
+      "@type": "Property"
+    },
+    {
+      "@id": "ex:Morphology",
+      "@type": "Property"
+    },
+    {
+      "@id": "ex:ModifiedGlassyCarbonElectrode",
+      "@type": "Material",
+      "has_property": [
+        {
+          "@id": "ex:ElectrochemicalPerformance"
+        }
+      ]
+    },
+    {
+      "@id": "ex:StirringTimeValue20min",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:AgingTemperatureValue60C",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:AgingTimeValue2h",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:Centrifugation",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:Washing",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:AirDrying",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:LDHsDispersionConcentrationValue2mgml1",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:LDHsStirringTimeValue12h",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:ElectrodeDryingMethod",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:NGBImmersionTimeValue25min",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:ElectrochemicalWorkstationModel",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:DeaerationMethod",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:XRDScanRateValue005s1",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:FESEMOperatingVoltageValue50kV",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:ElectrochemicalPerformance",
+      "@type": "Property"
+    }
+  ]
+}
