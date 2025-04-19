@@ -1,0 +1,116 @@
+{
+  "@context": {
+    "emmo": "http://emmo.info/emmo#",
+    "ex": "http://example.com/",
+    "is_manufacturing_input": "emmo:EMMO_e1097637",
+    "has_manufacturing_output": "emmo:EMMO_e1245987",
+    "is_measurement_input": "emmo:EMMO_m5677989",
+    "has_measurement_output": "emmo:EMMO_m87987545",
+    "has_property": "emmo:EMMO_p5778r78",
+    "has_parameter": "emmo:EMMO_p46903ar7",
+    "Material": "emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94",
+    "Manufacturing": "emmo:EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b",
+    "Measurement": "emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb",
+    "Property": "emmo:EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba",
+    "Parameter": "emmo:EMMO_d1d436e7_72fc_49cd_863b_7bfb4ba5276a"
+  },
+  "@graph": [
+    {
+      "@id": "ex:Ru-black",
+      "@type": "Material"
+    },
+    {
+      "@id": "ex:2-propanol",
+      "@type": "Material"
+    },
+    {
+      "@id": "ex:Nafion_solution",
+      "@type": "Material"
+    },
+    {
+      "@id": "ex:ruthenium_chloric_acid",
+      "@type": "Material"
+    },
+    {
+      "@id": "ex:Ru-black_Au_electrode",
+      "@type": "Material"
+    },
+    {
+      "@id": "ex:RuO2_Ti_electrode",
+      "@type": "Material"
+    },
+    {
+      "@id": "ex:Ru-black_Au_electrode_fabrication",
+      "@type": "Manufacturing",
+      "is_manufacturing_input": [
+        {"@id": "ex:Ru-black"},
+        {"@id": "ex:2-propanol"},
+        {"@id": "ex:Nafion_solution"}
+      ],
+      "has_manufacturing_output": {"@id": "ex:Ru-black_Au_electrode"},
+      "has_parameter": [
+        {"@id": "ex:Temperature"},
+        {"@id": "ex:Voltage"}
+      ]
+    },
+    {
+      "@id": "ex:RuO2_Ti_electrode_fabrication",
+      "@type": "Manufacturing",
+      "is_manufacturing_input": {"@id": "ex:ruthenium_chloric_acid"},
+      "has_manufacturing_output": {"@id": "ex:RuO2_Ti_electrode"},
+      "has_parameter": [
+        {"@id": "ex:Time"},
+        {"@id": "ex:Current"}
+      ]
+    },
+    {
+      "@id": "ex:Cyclic_voltammetry",
+      "@type": "Measurement",
+      "is_measurement_input": [
+        {"@id": "ex:Ru-black_Au_electrode"},
+        {"@id": "ex:RuO2_Ti_electrode"}
+      ],
+      "has_measurement_output": [
+        {"@id": "ex:Hydrogen_adsorption_desorption_peaks"},
+        {"@id": "ex:Oxidation_reduction_peaks"},
+        {"@id": "ex:Irreversible_oxidation_reduction_peaks"}
+      ]
+    },
+    {
+      "@id": "ex:Electrical_conductivity",
+      "@type": "Property",
+      "has_property": [
+        {"@id": "ex:Ru-black_Au_electrode"},
+        {"@id": "ex:RuO2_Ti_electrode"}
+      ]
+    },
+    {
+      "@id": "ex:Hydrogen_adsorption_desorption_peaks",
+      "@type": "Property"
+    },
+    {
+      "@id": "ex:Oxidation_reduction_peaks",
+      "@type": "Property"
+    },
+    {
+      "@id": "ex:Irreversible_oxidation_reduction_peaks",
+      "@type": "Property"
+    },
+    {
+      "@id": "ex:Temperature",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:Voltage",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:Time",
+      "@type": "Parameter"
+    },
+    {
+      "@id": "ex:Current",
+      "@type": "Parameter"
+    }
+  ]
+}
