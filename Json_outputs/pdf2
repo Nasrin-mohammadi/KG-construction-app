@@ -1,0 +1,100 @@
+"Material": [
+    "Pt–Ru alloy",
+    "Ru",
+    "RuO2",
+    "amorphous Ru(OH)3",
+    "RuO2nH2O",
+    "Pt/PtOx",
+    "Ru-black",
+    "2-propanol",
+    "Nafion solution",
+    "gold mesh",
+    "ruthenium chloric acid"
+]
+
+"Manufacturing": [
+    "Fabrication of Ru-black/Au electrode",
+    "Preparation of RuO2/Ti electrode"
+]
+
+"Measurement": [
+    "Pourbaix diagram analysis",
+    "Solubility or dissolution behavior analysis",
+    "Surface electrochemistry measurement",
+    "Cyclic voltammogram",
+    "Steady-state concentration determination"
+]
+
+"Property": [
+    "Anti-CO poisoning property of Pt–Ru alloy",
+    "Stability of Ru below 0.35 V vs. RHE",
+    "Solubility of amorphous Ru(OH)3 in the potential range from 0.2 to 0.8 V vs. RHE",
+    "Solubility of RuO2nH2O in the potential range from 0.8 to 1.1 V vs. RHE",
+    "Hydrogen adsorption/desorption peaks of Ru",
+    "Surface oxidation/reduction peaks of Ru",
+    "Reduction potential of surface oxide of Ru"
+]
+
+"Parameter": [
+    "Potential range for Ru stability (0.35 V vs. RHE)",
+    "Potential range for solubility of amorphous Ru(OH)3 (0.2 to 0.8 V vs. RHE)",
+    "Potential range for solubility of RuO2nH2O (0.8 to 1.1 V vs. RHE)",
+    "Potential range for cyclic voltammogram of Ru (0.05 to 1.2 V)",
+    "Temperature for drying Ru-black/Au electrode (80 °C)",
+    "Temperature for heating Ru-black/Au electrode (130 °C)",
+    "Pre-treatment potential for Ru-black/Au electrode (-0.1 V vs. RHE)",
+    "Pre-treatment time for Ru-black/Au electrode (24 h)",
+    "Concentration of H2SO4 for pre-treatment (1 M)",
+    "Thermal decomposition temperature for RuO2/Ti electrode (500 °C)"
+]
+Relationships:
+"is_manufacturing_input": [
+    ("Ru-black", "Fabrication of Ru-black/Au electrode"),
+    ("2-propanol", "Fabrication of Ru-black/Au electrode"),
+    ("Nafion solution", "Fabrication of Ru-black/Au electrode"),
+    ("gold mesh", "Fabrication of Ru-black/Au electrode"),
+    ("ruthenium chloric acid", "Preparation of RuO2/Ti electrode")
+]
+
+"has_manufacturing_output": [
+    ("Fabrication of Ru-black/Au electrode", "Ru-black/Au electrode"),
+    ("Preparation of RuO2/Ti electrode", "RuO2/Ti electrode")
+]
+"is_measurement_input": [
+    ("Ru-black/Au electrode", "Cyclic voltammogram"),
+    ("RuO2/Ti electrode", "Cyclic voltammogram"),
+    ("Ru-black/Au electrode", "Steady-state concentration determination"),
+    ("RuO2/Ti electrode", "Steady-state concentration determination"),
+    ("Ru-black/Au electrode", "Surface electrochemistry measurement"),
+    ("RuO2/Ti electrode", "Surface electrochemistry measurement"),
+    ("amorphous Ru(OH)3", "Solubility or dissolution behavior analysis"),
+    ("RuO2nH2O", "Solubility or dissolution behavior analysis"),
+    ("Pt–Ru alloy", "Pourbaix diagram analysis")
+]
+
+"has_measurement_output": [
+    ("Cyclic voltammogram", "Hydrogen adsorption/desorption peaks of Ru"),
+    ("Cyclic voltammogram", "Surface oxidation/reduction peaks of Ru"),
+    ("Cyclic voltammogram", "Reduction potential of surface oxide of Ru"),
+    ("Steady-state concentration determination", "Stability of Ru below 0.35 V vs. RHE"),
+    ("Solubility or dissolution behavior analysis", "Solubility of amorphous Ru(OH)3 in the potential range from 0.2 to 0.8 V vs. RHE"),
+    ("Solubility or dissolution behavior analysis", "Solubility of RuO2nH2O in the potential range from 0.8 to 1.1 V vs. RHE"),
+    ("Pourbaix diagram analysis", "Anti-CO poisoning property of Pt–Ru alloy")
+]
+"has_property": [
+    ("Pt–Ru alloy", "Anti-CO poisoning property of Pt–Ru alloy"),
+    ("Ru", "Stability of Ru below 0.35 V vs. RHE"),
+    ("amorphous Ru(OH)3", "Solubility of amorphous Ru(OH)3 in the potential range from 0.2 to 0.8 V vs. RHE"),
+    ("RuO2nH2O", "Solubility of RuO2nH2O in the potential range from 0.8 to 1.1 V vs. RHE"),
+    ("Ru", "Hydrogen adsorption/desorption peaks of Ru"),
+    ("Ru", "Surface oxidation/reduction peaks of Ru"),
+    ("Ru", "Reduction potential of surface oxide of Ru")
+]
+"has_parameter": [
+    ("Fabrication of Ru-black/Au electrode", "Temperature for drying Ru-black/Au electrode (80 °C)"),
+    ("Fabrication of Ru-black/Au electrode", "Temperature for heating Ru-black/Au electrode (130 °C)"),
+    ("Fabrication of Ru-black/Au electrode", "Pre-treatment potential for Ru-black/Au electrode (-0.1 V vs. RHE)"),
+    ("Fabrication of Ru-black/Au electrode", "Pre-treatment time for Ru-black/Au electrode (24 h)"),
+    ("Fabrication of Ru-black/Au electrode", "Concentration of H2SO4 for pre-treatment (1 M)"),
+    ("Preparation of RuO2/Ti electrode", "Thermal decomposition temperature for RuO2/Ti electrode (500 °C)")
+]
